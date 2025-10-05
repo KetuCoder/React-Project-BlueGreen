@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: todo-blue
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
       app: todo-blue
@@ -11,22 +11,10 @@ spec:
     metadata:
       labels:
         app: todo-blue
+        version: blue
     spec:
       containers:
       - name: todo-blue
-        image: cloudketan/todo-blue:latest
+        image: cloudketan/todo:blue
         ports:
         - containerPort: 80
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: todo-blue-service
-spec:
-  type: NodePort
-  selector:
-    app: todo-blue
-  ports:
-    - port: 80
-      targetPort: 80
-      nodePort: 30080
