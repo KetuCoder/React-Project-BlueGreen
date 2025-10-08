@@ -6,15 +6,15 @@ spec:
   replicas: 3
   selector:
     matchLabels:
-      app: todo-blue
+      app: todo
   template:
     metadata:
       labels:
-        app: todo-blue
+        app: todo
         version: blue
     spec:
       containers:
       - name: todo-blue
         image: cloudketan/todo:blue
         ports:
-        - containerPort: 80
+        - containerPort: 3000
