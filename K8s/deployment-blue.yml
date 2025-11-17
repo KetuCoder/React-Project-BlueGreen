@@ -11,9 +11,10 @@ spec:
     metadata:
       labels:
         app: todo
+        version: blue
     spec:
       containers:
       - name: todo-blue
-        image: cloudketan/react-todo
+        image: cloudketan/todo-blue
         ports:
         - containerPort: 3000
