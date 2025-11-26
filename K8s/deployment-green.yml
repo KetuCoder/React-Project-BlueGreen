@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: todo-green
-        image: cloudketan/todo:green
+        image: cloudketan/todo-green:v1
         ports:
         - containerPort: 3000
