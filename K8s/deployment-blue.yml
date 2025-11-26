@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: todo-blue
-        image: cloudketan/todo-blue
+        image: cloudketan/react-blue:v1
         ports:
         - containerPort: 3000
