@@ -31,7 +31,7 @@ function App() {
   return (
     <div className="min-h-screen bg-green-100 flex items-center justify-center">
       <div className="bg-white p-6 rounded shadow-md w-full max-w-md">
-        <h1 className="text-2xl font-bold mb-4 text-green-700">Todo App (Green)</h1>
+        <h1 className="text-2xl font-bold mb-4 text-green-700">Todo Ap (Green)</h1>
         <div className="flex gap-2 mb-4">
           <input
             type="text"
