@@ -1,21 +1,21 @@
-# apiVersion: apps/v1
-# kind: Deployment
-# metadata:
-#   name: todo-green
-#   namespace: default
-# spec:
-#   replicas: 3
-#   selector:
-#     matchLabels:
-#       app: todo
-#   template:
-#     metadata:
-#       labels:
-#         app: todo
-#         version: green
-#     spec:
-#       containers:
-#       - name: todo-green
-#         image: cloudketan/react-green:v2
-#         ports:
-#         - containerPort: 3000
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: todo-green
+  namespace: default
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: todo
+  template:
+    metadata:
+      labels:
+        app: todo
+        version: green
+    spec:
+      containers:
+      - name: todo-green
+        image: cloudketan/react-green:v2
+        ports:
+        - containerPort: 3000
