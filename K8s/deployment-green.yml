@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: todo-green
-        image: cloudketan/react-green:v3
+        image: cloudketan/react-green:v2
         ports:
         - containerPort: 3000
